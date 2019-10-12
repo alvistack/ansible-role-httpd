@@ -23,6 +23,5 @@ _apt:
   - { state: "latest", name: "apache2-data" }
   - { state: "latest", name: "apache2-doc" }
   - { state: "latest", name: "apache2-utils" }
-  - { state: "latest", name: "libapache2-mpm-itk" }
 
 _httpd_service: "apache2"
