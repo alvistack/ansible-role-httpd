@@ -15,7 +15,8 @@
 # limitations under the License.
 
 _apt_repository:
-  - { state: "present", repo: "ppa:ondrej/apache2" }
+  - repo: "ppa:ondrej/apache2"
+    state: "present"
 
 _apt:
   - { state: "latest", name: "apache2" }
