@@ -14,8 +14,11 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+_httpd_service: "apache2"
+
 _apt_repository:
-  - { state: "present", repo: "ppa:ondrej/apache2" }
+  - repo: "ppa:ondrej/apache2"
+    state: "present"
 
 _apt:
   - { state: "latest", name: "apache2" }
@@ -24,5 +27,3 @@ _apt:
   - { state: "latest", name: "apache2-doc" }
   - { state: "latest", name: "apache2-utils" }
   - { state: "latest", name: "libssl-dev" }
-
-_httpd_service: "apache2"

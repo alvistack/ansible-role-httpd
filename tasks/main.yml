@@ -52,7 +52,7 @@
   meta: flush_handlers
   tags: httpd
 
-- name: enable service
+- name: start service
   service:
     name: "{{ httpd_service }}"
     state: "started"
