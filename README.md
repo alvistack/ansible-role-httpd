@@ -1,6 +1,6 @@
 # Ansible Role for Apache HTTP Server
 
-[![Travis](https://img.shields.io/travis/alvistack/ansible-role-httpd.svg)](https://travis-ci.org/alvistack/ansible-role-httpd)
+[![Travis](https://img.shields.io/travis/com/alvistack/ansible-role-httpd.svg)](https://travis-ci.com/alvistack/ansible-role-httpd)
 [![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-httpd.svg)](https://github.com/alvistack/ansible-role-httpd)
 [![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-httpd.svg)](https://github.com/alvistack/ansible-role-httpd/blob/master/LICENSE)
 [![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.httpd-blue.svg)](https://galaxy.ansible.com/alvistack/httpd)
