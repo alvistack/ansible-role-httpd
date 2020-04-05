@@ -16,14 +16,7 @@
 
 _httpd_service: "httpd"
 
-_yum_repository:
-  - name: "https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm"
-    state: "latest"
-  - name: "https://centos7.iuscommunity.org/ius-release.rpm"
-    state: "latest"
-
 _yum:
-  - { state: "latest", name: "httpd24u" }
-  - { state: "latest", name: "httpd24u-manual" }
-  - { state: "latest", name: "httpd24u-mod_ssl" }
-  - { state: "latest", name: "httpd24u-tools" }
+  - { state: "latest", name: "httpd" }
+  - { state: "latest", name: "httpd-manual" }
+  - { state: "latest", name: "httpd-tools" }

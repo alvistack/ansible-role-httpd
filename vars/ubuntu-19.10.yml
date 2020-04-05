@@ -16,8 +16,6 @@
 
 _httpd_service: "apache2"
 
-_apt_repository: []
-
 _apt:
   - { state: "latest", name: "apache2" }
   - { state: "latest", name: "apache2-bin" }
