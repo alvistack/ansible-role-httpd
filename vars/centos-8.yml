@@ -14,14 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: bootstrap
-  src: https://github.com/alvistack/ansible-role-bootstrap
-  version: develop
+_httpd_service: "httpd"
 
-- name: locales
-  src: https://github.com/alvistack/ansible-role-locales
-  version: develop
-
-- name: timezone
-  src: https://github.com/alvistack/ansible-role-timezone
-  version: develop
+_yum:
+  - { state: "latest", name: "httpd" }
+  - { state: "latest", name: "httpd-manual" }
+  - { state: "latest", name: "httpd-tools" }
