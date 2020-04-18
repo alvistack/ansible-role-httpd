@@ -52,7 +52,7 @@
   meta: flush_handlers
   tags: httpd
 
-- name: start service
+- name: systemctl start apache2
   service:
     name: "{{ httpd_service }}"
     state: "started"
