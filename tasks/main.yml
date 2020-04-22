@@ -48,15 +48,15 @@
   ignore_errors: true
   tags: httpd
 
-- name: flush handlers
-  meta: flush_handlers
-  tags: httpd
-
-- name: start service
+- name: systemctl start apache2
   service:
     name: "{{ httpd_service }}"
     state: "started"
     enabled: true
   changed_when: false
   ignore_errors: true
+  tags: httpd
+
+- name: flush handlers
+  meta: flush_handlers
   tags: httpd
