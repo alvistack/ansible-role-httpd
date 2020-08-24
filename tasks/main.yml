@@ -48,7 +48,7 @@
   ignore_errors: true
   tags: httpd
 
-- name: systemctl start apache2
+- name: systemctl start apache2.service
   service:
     name: "{{ httpd_service }}"
     state: "started"
