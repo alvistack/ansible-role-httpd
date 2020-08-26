@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-- name: httpd | systemctl restart apache2
+- name: httpd | systemctl restart apache2.service
   service:
     name: "{{ httpd_service }}"
     state: "restarted"
