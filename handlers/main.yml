@@ -16,7 +16,7 @@
 
 - name: httpd | systemctl restart apache2.service
   service:
-    name: "{{ httpd_service }}"
+    name: "{{ _service }}"
     state: "restarted"
     enabled: true
   loop: "{{ ansible_play_hosts }}"

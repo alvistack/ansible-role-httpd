@@ -14,7 +14,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_httpd_service: "httpd.service"
+_service: "httpd.service"
 
 _yum:
   - { state: "latest", name: "httpd" }

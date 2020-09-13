@@ -50,7 +50,7 @@
 
 - name: systemctl start apache2.service
   service:
-    name: "{{ httpd_service }}"
+    name: "{{ _service }}"
     state: "started"
     enabled: true
   changed_when: false
