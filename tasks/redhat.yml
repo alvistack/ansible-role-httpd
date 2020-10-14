@@ -23,4 +23,3 @@
   until: result is succeeded
   notify:
     - httpd | systemctl restart apache2.service
-  tags: httpd
