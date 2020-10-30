@@ -16,6 +16,10 @@
 
 _service: "apache2.service"
 
+_apt_key: []
+
+_apt_repository: []
+
 _apt:
   - { state: "latest", name: "apache2" }
   - { state: "latest", name: "apache2-bin" }
