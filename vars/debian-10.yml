@@ -26,6 +26,7 @@ _apt_repository:
     state: "present"
 
 _apt:
+  - { state: "latest", name: "ssl-cert" }
   - { state: "latest", name: "apache2" }
   - { state: "latest", name: "apache2-bin" }
   - { state: "latest", name: "apache2-data" }
