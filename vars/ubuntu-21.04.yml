@@ -22,7 +22,7 @@ _apt_key:
     state: "present"
 
 _apt_repository:
-  - repo: "deb http://ppa.launchpad.net/ondrej/apache2/ubuntu groovy main"
+  - repo: "deb http://ppa.launchpad.net/ondrej/apache2/ubuntu hirsute main"
     state: "present"
 
 _apt:
