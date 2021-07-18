@@ -1,9 +1,13 @@
 # Ansible Role for Apache HTTP Server
 
-[![Gitlab pipeline status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-httpd/master)](https://gitlab.com/alvistack/ansible-role-httpd/-/pipelines)
-[![GitHub release](https://img.shields.io/github/release/alvistack/ansible-role-httpd.svg)](https://github.com/alvistack/ansible-role-httpd/releases)
-[![GitHub license](https://img.shields.io/github/license/alvistack/ansible-role-httpd.svg)](https://github.com/alvistack/ansible-role-httpd/blob/master/LICENSE)
-[![Ansible Role](https://img.shields.io/badge/galaxy-alvistack.httpd-blue.svg)](https://galaxy.ansible.com/alvistack/httpd)
+[![Gitlab pipeline
+status](https://img.shields.io/gitlab/pipeline/alvistack/ansible-role-httpd/master)](https://gitlab.com/alvistack/ansible-role-httpd/-/pipelines)
+[![GitHub
+release](https://img.shields.io/github/release/alvistack/ansible-role-httpd.svg)](https://github.com/alvistack/ansible-role-httpd/releases)
+[![GitHub
+license](https://img.shields.io/github/license/alvistack/ansible-role-httpd.svg)](https://github.com/alvistack/ansible-role-httpd/blob/master/LICENSE)
+[![Ansible
+Role](https://img.shields.io/badge/galaxy-alvistack.httpd-blue.svg)](https://galaxy.ansible.com/alvistack/httpd)
 
 Ansible Role for Apache HTTP Server Installation.
 
@@ -39,7 +43,8 @@ This role could simply deploy to `localhost` as below:
 ## License
 
   - Code released under [Apache License 2.0](LICENSE)
-  - Docs released under [CC BY 4.0](http://creativecommons.org/licenses/by/4.0/)
+  - Docs released under [CC
+    BY 4.0](http://creativecommons.org/licenses/by/4.0/)
 
 ## Author Information
 
