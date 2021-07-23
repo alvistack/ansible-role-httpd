@@ -26,12 +26,9 @@
 
 ### Major Changes
 
-  - Bugfix [ansible-lint
-    `namespace`](https://github.com/ansible-community/ansible-lint/pull/1451)
-  - Bugfix [ansible-lint
-    `no-handler`](https://github.com/ansible-community/ansible-lint/pull/1402)
-  - Bugfix [ansible-lint
-    `unnamed-task`](https://github.com/ansible-community/ansible-lint/pull/1413)
+  - Bugfix [ansible-lint `namespace`](https://github.com/ansible-community/ansible-lint/pull/1451)
+  - Bugfix [ansible-lint `no-handler`](https://github.com/ansible-community/ansible-lint/pull/1402)
+  - Bugfix [ansible-lint `unnamed-task`](https://github.com/ansible-community/ansible-lint/pull/1413)
   - Simplify Python dependency with system packages
   - Support RHEL 8 with Molecule
   - Support RHEL 7 with Molecule
@@ -108,5 +105,4 @@
 ## 3.5.0 - 2019-10-12
 
   - Initial release for Ansible 2.8 or higher
-  - Support both Ubuntu 16.04/18.04 or RHEL/CentOS 7 or openSUSE Leap
-    15.1
+  - Support both Ubuntu 16.04/18.04 or RHEL/CentOS 7 or openSUSE Leap 15.1
