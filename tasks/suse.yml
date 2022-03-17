@@ -25,9 +25,9 @@
   ansible.builtin.user:
     name: "wwwrun"
     uid: "30"
-    ansible.builtin.group: "www"
+    group: "www"
     home: "/var/lib/wwwrun"
-    ansible.builtin.shell: "/sbin/nologin"
+    shell: "/sbin/nologin"
     system: true
     create_home: false
     state: "present"
