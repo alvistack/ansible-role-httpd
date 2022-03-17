@@ -25,9 +25,9 @@
   ansible.builtin.user:
     name: "apache"
     uid: "48"
-    ansible.builtin.group: "apache"
+    group: "apache"
     home: "/usr/share/httpd"
-    ansible.builtin.shell: "/sbin/nologin"
+    shell: "/sbin/nologin"
     system: true
     create_home: false
     state: "present"
