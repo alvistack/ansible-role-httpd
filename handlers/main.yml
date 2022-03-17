@@ -15,7 +15,7 @@
 # limitations under the License.
 
 - name: httpd | systemctl restart apache2.service
-  service:
+  ansible.builtin.service:
     name: "{{ _service }}"
     state: "restarted"
     enabled: true

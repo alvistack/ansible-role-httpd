@@ -15,25 +15,25 @@
 # limitations under the License.
 
 - name: groupadd
-  group:
+  ansible.builtin.group:
     name: "apache"
     gid: "48"
     system: true
     state: "present"
 
 - name: useradd
-  user:
+  ansible.builtin.user:
     name: "apache"
     uid: "48"
-    group: "apache"
+    ansible.builtin.group: "apache"
     home: "/usr/share/httpd"
-    shell: "/sbin/nologin"
+    ansible.builtin.shell: "/sbin/nologin"
     system: true
     create_home: false
     state: "present"
 
 - name: yum install
-  yum:
+  ansible.builtin.yum:
     name: "{{ item.name }}"
     state: "{{ item.state }}"
   loop: "{{ _yum }}"
