@@ -20,7 +20,8 @@
   become: true
   tasks:
     - name: apachectl -v
-      ansible.builtin.command: apachectl -v
+      ansible.builtin.command:
+        cmd: apachectl -v
       register: result
       changed_when: result is not succeeded
 
