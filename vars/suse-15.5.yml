@@ -16,22 +16,7 @@
 
 _service: "apache2.service"
 
-_apt_key:
-  - keyring: "/etc/apt/trusted.gpg.d/sury.gpg"
-    url: "http://packages.sury.org/apache2/apt.gpg"
-    id: "15058500A0235D97F5D10063B188E2B695BD4743"
-    state: "present"
-
-_apt_repository:
-  - filename: "sury"
-    repo: "deb http://packages.sury.org/apache2 buster main"
-    state: "present"
-
-_apt:
-  - { state: "latest", name: "ssl-cert" }
+_zypper:
   - { state: "latest", name: "apache2" }
-  - { state: "latest", name: "apache2-bin" }
-  - { state: "latest", name: "apache2-data" }
   - { state: "latest", name: "apache2-doc" }
   - { state: "latest", name: "apache2-utils" }
-  - { state: "latest", name: "libssl-dev" }
