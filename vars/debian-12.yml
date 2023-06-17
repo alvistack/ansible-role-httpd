@@ -24,7 +24,7 @@ _apt_key:
 
 _apt_repository:
   - filename: "sury"
-    repo: "deb http://packages.sury.org/apache2 bullseye main"
+    repo: "deb http://packages.sury.org/apache2 bookworm main"
     state: "present"
 
 _apt:
