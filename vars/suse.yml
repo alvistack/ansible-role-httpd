@@ -14,9 +14,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-_service: "apache2.service"
+_service: apache2.service
 
 _zypper:
-  - { state: "latest", name: "apache2" }
-  - { state: "latest", name: "apache2-doc" }
-  - { state: "latest", name: "apache2-utils" }
+  - { state: latest, name: apache2 }
+  - { state: latest, name: apache2-doc }
+  - { state: latest, name: apache2-utils }
