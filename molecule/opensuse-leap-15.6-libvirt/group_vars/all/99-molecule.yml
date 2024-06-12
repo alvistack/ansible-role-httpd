@@ -13,10 +13,3 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-
-_service: httpd.service
-
-_yum:
-  - { state: latest, name: httpd }
-  - { state: latest, name: httpd-manual }
-  - { state: latest, name: httpd-tools }
