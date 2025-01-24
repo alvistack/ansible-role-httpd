@@ -16,13 +16,18 @@
 
 _service: apache2.service
 
+_apt_key:
+  - url: http://packages.sury.org/apache2/apt.gpg
+    dest: /etc/apt/keyrings/sury.asc
+    checksum: "sha256:d63c11bc5067b1849c6a42a2d061916ba7c07632d4c0dbda4789d66fb263a285"
+
 _deb822_repository:
   - name: sury-apache2
     types: deb
     uris: http://packages.sury.org/apache2
     suites: bookworm
     components: main
-    signed_by: http://packages.sury.org/apache2/apt.gpg
+    signed_by: /etc/apt/keyrings/sury.asc
     enabled: true
     state: present
 
