@@ -31,12 +31,14 @@
     create_home: false
     state: present
 
-- name: yum install
+- name: dnf install
   ansible.builtin.dnf:
     name: "{{ item.name }}"
     state: "{{ item.state }}"
-  loop: "{{ _yum }}"
+  loop: "{{ _dnf }}"
   register: result
   until: result is succeeded
   notify:
     - httpd | systemctl restart apache2.service
+  tags:
+    - _dnf

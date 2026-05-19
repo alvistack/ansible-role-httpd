@@ -16,7 +16,7 @@
 
 _service: httpd.service
 
-_yum:
+_dnf:
   - { state: latest, name: httpd }
   - { state: latest, name: httpd-manual }
   - { state: latest, name: httpd-tools }
