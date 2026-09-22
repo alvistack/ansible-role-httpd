@@ -17,17 +17,17 @@
 _service: apache2.service
 
 _apt_key:
-  - url: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0xB8DC7E53946656EFBCE4C1DD71DAEAAB4AD4CAB6
-    dest: /etc/apt/keyrings/ondrej.asc
-    checksum: "sha256:7258b1cb18300b87cd5668a6d64ce78184d9c0e129382879a0d79291c4ef463d"
+  - url: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x15058500A0235D97F5D10063B188E2B695BD4743
+    dest: /etc/apt/keyrings/sury.asc
+    checksum: "sha256:023b08fdf09fcf0a123ebef0b247765bad2481327bbdee3599bf7bbae3ae2061"
 
 _deb822_repository:
-  - name: ondrej-apache2
+  - name: sury-apache2
     types: deb
-    uris: http://ppa.launchpad.net/ondrej/apache2/ubuntu
-    suites: noble
+    uris: http://packages.sury.org/apache2
+    suites: resolute
     components: main
-    signed_by: /etc/apt/keyrings/ondrej.asc
+    signed_by: /etc/apt/keyrings/sury.asc
     enabled: true
     state: present
 
