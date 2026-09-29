@@ -17,15 +17,15 @@
 _service: apache2.service
 
 _apt_key:
-  - url: https://packages.sury.org/apache2/apt.gpg
+  - url: http://keyserver.ubuntu.com/pks/lookup?op=get&search=0x15058500A0235D97F5D10063B188E2B695BD4743
     dest: /etc/apt/keyrings/sury.asc
-    checksum: "sha256:d63c11bc5067b1849c6a42a2d061916ba7c07632d4c0dbda4789d66fb263a285"
+    checksum: "sha256:023b08fdf09fcf0a123ebef0b247765bad2481327bbdee3599bf7bbae3ae2061"
 
 _deb822_repository:
   - name: sury-apache2
     types: deb
     uris: https://packages.sury.org/apache2
-    suites: bookworm
+    suites: trixie
     components: main
     signed_by: /etc/apt/keyrings/sury.asc
     enabled: true
@@ -38,4 +38,3 @@ _apt:
   - { state: latest, name: apache2-data }
   - { state: latest, name: apache2-doc }
   - { state: latest, name: apache2-utils }
-  - { state: latest, name: libssl-dev }
